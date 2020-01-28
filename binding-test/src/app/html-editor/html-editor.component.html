@@ -1,0 +1,5 @@
+<textarea [(ngModel)]="userInput" (ngModelChange)="updateHTML($event)" rows="5" cols="40"></textarea>
+<h4>PREV.</h4>
+<div [innerHTML]="userInput"></div>
+<h4>PREVIEW</h4>
+<pre>{{userInput}}</pre>

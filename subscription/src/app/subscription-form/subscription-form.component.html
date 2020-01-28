@@ -1,0 +1,11 @@
+<h3>PLEASE SUBCRIBE TO OUR NEWSLETTER SCRUB</h3>
+
+<p>E-mail address</p>
+<p><app-fancy-text></app-fancy-text></p>
+<p>Areas of interest</p>
+<!-- <p><app-fancy-checkbox label="Vollyball"></app-fancy-checkbox></p>
+<p><app-fancy-checkbox label="Football"></app-fancy-checkbox></p>
+<p><app-fancy-checkbox label="Tennis"></app-fancy-checkbox></p> -->
+<p *ngFor=" let interest of interests ">
+  <app-fancy-checkbox label="{{interest}}"></app-fancy-checkbox>
+</p>
