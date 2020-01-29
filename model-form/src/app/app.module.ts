@@ -1,22 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { HttpClientModule  } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NewsListComponent } from './news-list/news-list.component';
-import { NewsSearchPipe } from './news-list/news-search.pipe';
+import { MagazineComponent } from './magazine/magazine.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewsListComponent,
-    NewsSearchPipe
+    MagazineComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
