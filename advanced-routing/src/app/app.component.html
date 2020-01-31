@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div>
+  <input type=button [routerLink]="['/home']" routerLinkActive="router-link-active"  value="Home" >
+  <input type=button [routerLink]="['/about']" routerLinkActive="router-link-active"  value="About" >
+  <input type=button [routerLink]="['/admin']" routerLinkActive="router-link-active"  value="Admin" >
+  <div class="login">
+    <input type="button" value="{{loginLabel}}" class="user" (click)="login()" >
+    <span class="user" [hidden]="user==='na' " >User: {{user}}</span>
+  </div>
+</div>
+<main>
+    <router-outlet></router-outlet>
+</main>
